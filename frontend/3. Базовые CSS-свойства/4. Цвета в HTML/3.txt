@@ -1,0 +1,13 @@
+body, h1 {
+  margin: 0;
+}
+
+header {
+  width: 100%;
+  background-color: #eee;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 140px;
+}

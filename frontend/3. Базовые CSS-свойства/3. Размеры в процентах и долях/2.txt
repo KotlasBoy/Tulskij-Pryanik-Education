@@ -1,0 +1,9 @@
+header {
+  width: 100%;
+  background-color: forestgreen;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 140px;
+}

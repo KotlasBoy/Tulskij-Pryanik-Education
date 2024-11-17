@@ -1,0 +1,14 @@
+body, h1 {
+  margin: 0;
+}
+
+header {
+  height: 100vh;
+  background-color: #eee;
+  background-image: url(https://pictures.s3.yandex.net/frontend-developer/free-course/cover.jpg);
+}
+
+h1 {
+  font-size: 140px;
+  color: white;
+}
