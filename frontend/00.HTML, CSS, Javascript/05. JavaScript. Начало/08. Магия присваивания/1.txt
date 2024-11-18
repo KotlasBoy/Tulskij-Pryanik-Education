@@ -1,0 +1,4 @@
+let time;
+time = 34;
+console.log('Старт поездки. Осталось минут: ' + time);
+time -= 15;
