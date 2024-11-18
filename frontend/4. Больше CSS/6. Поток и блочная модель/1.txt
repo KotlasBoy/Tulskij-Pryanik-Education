@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Четыре правила вёрстки</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image" href="https://code.s3.yandex.net/web-code/rules-favicon.ico">
+</head>
+<body>
+  <!--
+  <header>
+    <div class="overlay">
+      <h1>Четыре правила вёрстки</h1>
+    </div>
+  </header>
+-->
+  <section>
+    <div class="card">
+      <h3 class="card-title">Пустота</h3>
+      <p class="card-text">Простое правило, которое часто нарушают: ставить рядом элементы с похожим смыслом и окружать их пустым пространством. Пустота — мощное средство воздействия.</p>
+    </div>
+    <div class="card">
+      <h3 class="card-title">Сетка</h3>
+      <p class="card-text">Размеры элементов и расстояния между ними укладываются в гармоничную схему — её называют сеткой. Если элемент выпадает, зритель может это заметить.</p>
+    </div>
+  </section>
+</body>
+</html>
