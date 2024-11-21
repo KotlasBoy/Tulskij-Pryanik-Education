@@ -1,0 +1,24 @@
+<header>
+    <p>Место для логотипа</p>
+    <nav>
+      <ul>
+        <li>
+          <a href="{% url 'homepage:index' %}">
+    Главная
+  </a>  
+        </li>
+        <li>
+          <a href="{% url 'ice_cream:ice_cream_list' %}">
+    Список мороженого
+      </a>
+        </li>
+        <li>
+          <!-- тут должна быть ссылка на страницу о проекте
+          Текст на ссылке: О проекте --> 
+            <a href="{% url 'about:description' %}">
+    О проекте
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
