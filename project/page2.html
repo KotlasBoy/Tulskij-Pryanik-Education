@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Рабиение модели на панели</title>
+        <link rel="stylesheet" href="styles/styles.css" />
+    </head>
+    <body>
+        <!-- Обёртка страницы для растяжения по высоте -->
+        <div class="page-wrapper">
+            <!-- Контейнер для хедера -->
+            <div id="header-container"></div>
+
+            <!-- Основной контент (обёрнут в main-content) -->
+            <main class="main-content">
+                <section class="model-section">
+                    <h1>Рабиение модели на панели</h1>
+
+                    <!-- Блок с изображением -->
+                    <div class="model-placeholder">
+                        <p style="opacity: 0.7">Иконка изображения</p>
+                    </div>
+
+                    <!-- Блок с кнопками -->
+                    <div class="model-buttons">
+                        <button>Прервать</button>
+                        <button>Продолжить</button>
+                    </div>
+                </section>
+            </main>
+
+            <!-- Контейнер для футера -->
+            <div id="footer-container"></div>
+        </div>
+
+        <!-- Скрипты для подгрузки компонентов -->
+        <script src="scripts/loadHeader.js"></script>
+        <script src="scripts/loadFooter.js"></script>
+    </body>
+</html>

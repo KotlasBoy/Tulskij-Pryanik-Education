@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Аэродинамические расчеты</title>
+        <link rel="stylesheet" href="styles/styles.css" />
+    </head>
+    <body>
+        <!-- Контейнер для хедера -->
+        <div id="header-container"></div>
+
+        <!-- Секция hero с фоновым изображением -->
+        <section class="hero">
+            <h1 class="highlight">
+                РАССЧИТЫВАЙТЕ АЭРОДИНАМИКУ ПРОСТО И БЫСТРО
+            </h1>
+            <p>
+                Загружайте данные — получайте точные расчеты онлайн. Легко,
+                удобно, профессионально.
+            </p>
+            <button>Рассчитать</button>
+        </section>
+
+        <section class="features">
+            <div>
+                <h3>
+                    Быстрый и проверенный облачный инструмент для проектирования
+                    CFD
+                </h3>
+            </div>
+            <div>
+                <h3>
+                    Результаты моделирования отображаются прямо в Вашем браузере
+                </h3>
+            </div>
+            <div>
+                <h3>Интуитивный интерфейс, с которым справится даже новичок</h3>
+            </div>
+        </section>
+
+        <section class="form-section">
+            <div class="form-container">
+                <div class="input-fields">
+                    <input type="text" placeholder="Давление" />
+                    <input type="text" placeholder="Скорость потока воздуха" />
+                    <input type="text" placeholder="Плотность среды" />
+                    <button type="submit">Отправить</button>
+                </div>
+                <div class="upload-field">
+                    <label for="file-upload">Загрузите 3D модель</label>
+                    <input type="file" id="file-upload" />
+                </div>
+            </div>
+        </section>
+
+        <!-- Контейнер для футера -->
+        <div id="footer-container"></div>
+
+        <!-- Скрипты для подгрузки компонентов -->
+        <script src="./scripts/loadHeader.js"></script>
+        <script src="./scripts/loadFooter.js"></script>
+    </body>
+</html>

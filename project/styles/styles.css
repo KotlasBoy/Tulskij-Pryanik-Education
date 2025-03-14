@@ -1,0 +1,250 @@
+/* Базовые стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #222;
+    color: #fff;
+}
+
+/* Красный текст */
+.highlight {
+    color: #ff0000; /* Красный цвет */
+}
+
+/* Стили для навигации */
+header {
+    background-color: #111;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 20px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Секция hero */
+.hero {
+    position: relative; /* Создаём слой для текста поверх фона */
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    background: url("../source/kisspng_su2_code_computational_fluid_dynamics_pointwise_i_su2_wiki.png")
+        no-repeat center right;
+    background-size: contain; /* Масштабируем изображение */
+    background-color: #333; /* Резервный фон */
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 2; /* Текст поверх фонового изображения */
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 2; /* Текст поверх фонового изображения */
+}
+
+.hero button {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    width: 200px;
+    position: relative;
+    z-index: 2; /* Кнопка поверх фонового изображения */
+}
+
+.hero button:hover {
+    background-color: #f0f0f0;
+}
+
+/* Секция features */
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+    background-color: #444;
+}
+
+.features div {
+    text-align: center;
+    width: 30%;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+/* Форма */
+.form-section {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    padding: 20px;
+}
+
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+.input-fields {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.input-fields input {
+    margin-bottom: 20px;
+    padding: 20px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.input-fields button {
+    padding: 20px;
+    font-size: 18px;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.input-fields button:hover {
+    background-color: #f0f0f0;
+}
+
+.upload-field {
+    width: 45%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.upload-field label {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.upload-field input {
+    width: 100%;
+    padding: 20px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    height: calc(100% - 60px);
+}
+
+/* Стили для футера */
+.site-footer {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    border-top: 1px solid #fff;
+}
+/* Секция для работы с моделью */
+.model-section {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Стили для заглушки изображения */
+.model-placeholder {
+    width: 300px;
+    height: 300px;
+    background-color: #555;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+/* Стили для кнопок */
+.model-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.model-buttons button {
+    padding: 15px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.model-buttons button:hover {
+    background-color: #ddd;
+}
+
+/* Обёртка страницы: заставляет контент занимать всю высоту экрана */
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Основной контент растягивается, чтобы футер всегда был внизу */
+.main-content {
+    flex: 1;
+}
+
+/* Основной контент растягивается, заполняя пространство */
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Дополнительное пространство перед футером */
+.extra-space {
+    height: 200px; /* Можно увеличить, если футер не прижимается */
+}
